@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 
-export function Numeros() {
-  const [numero, setNume] = useState(null);
+function Numeros() {
+  const [numero, setNumero] = useState(null);
   const [nuevoNumero, setNuevoNumero] = useState();
 
   const generarNumero = () => {
-    let numeroAleatorio = Math.floor(Math.random() * nuevoNumero);
-    setNume(numeroAleatorio);
+    const numeroAleatorio = Math.floor(Math.random() * nuevoNumero);
+    setNumero(numeroAleatorio);
   };
 
   const handleSubtmit = async (e) => {
