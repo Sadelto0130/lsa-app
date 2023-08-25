@@ -14,6 +14,9 @@ function Navbar() {
           <li>
             <Link href="/unidades/numeros" className= "text-white">Numeros</Link>
           </li>
+          <li>
+            <Link href="/unidades/alfabeto" className= "text-white">Alfabeto</Link>
+          </li>
         </ul>
       </div>
     </nav>

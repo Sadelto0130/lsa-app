@@ -19,7 +19,7 @@ function Numeros() {
     setNuevoNumero(e.target.value);
   };
   return (
-    <div className="h-[calc(100vh-7rem)] flex justify-center items-center flex-col">
+    <div >
       <form onSubmit={handleSubtmit}>
         <header className="flex justify-between">
           <h1 className="font-bold text-3xl">Diga en LSA los numeros que salen en pantalla</h1>
@@ -36,7 +36,7 @@ function Numeros() {
         />{" "}
         <button
           type="submit"
-          className="bg-green-600 hover:bg-greem-700 text-white font-bold px-4 rounded-lg"
+          className="bg-green-600 hover:bg-green-700 text-white font-bold px-4 rounded-lg"
           onClick={generarNumero}
         >
           Generar Numero Aleatorio
