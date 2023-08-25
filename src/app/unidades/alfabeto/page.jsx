@@ -36,7 +36,6 @@ function Page() {
   const [imageHidden, setImageHidden] = useState(true);
 
   const abecedario = [
-    { letra: "", imagen: Espacio },
     { letra: "a", imagen: A },
     { letra: "b", imagen: B },
     { letra: "c", imagen: C },
@@ -68,13 +67,12 @@ function Page() {
   ];
 
   const letrasAzar = () => {
-    setAzar(Math.floor(Math.random() * 29));
+    setAzar(Math.floor(Math.random() * 28));
     
   };
 
   const toggleImage = () => {
     setImageHidden((prevHidden) => !prevHidden);
-    console.log(abecedario[azar].imagen)
   };
 
   return (
@@ -113,7 +111,7 @@ function Page() {
         <Image
           src={abecedario[azar].imagen}
           alt={`Imagen de la letra ${abecedario[azar].letra}`}
-          className={`w-auto h-auto ${imageHidden  ? "hidden" : ""}`}
+          className={`w-40 h-auto ${imageHidden  ? "hidden" : ""}`}
         />
       </div>
     </div>
