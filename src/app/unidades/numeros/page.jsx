@@ -24,7 +24,7 @@ function Numeros() {
   return (
     <div>
       <form onSubmit={handleSubtmit}>
-        <header className="flex justify-between">
+        <header className="grid justify-items-center">
           <h1 className="font-bold text-3xl">
             Diga en LSA los numeros que salen en pantalla
           </h1>
