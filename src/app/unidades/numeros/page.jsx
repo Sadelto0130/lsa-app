@@ -46,9 +46,14 @@ function Numeros() {
           Generar Numero Aleatorio
         </button>
       </form>
-      <p className="grid justify-items-center text-white-800 my-5 text-5xl">
-        {numero !== null ? numero : `Presiona el botón para generar un número`}
-      </p>
+      
+        {numero !== null ? 
+          <p className="grid justify-items-center text-white-800 my-5 text-5xl">
+            {numero} 
+          </p>
+          :  <p className="grid justify-items-center text-white-800 my-5 text-2xl"> Presiona el botón para generar un número </p>
+        }
+      
     </div>
   );
 }
